@@ -1,5 +1,5 @@
-import graphviz, os, time, tree_node
-from graphviz import nohtml
+from tree_node import TreeNode
+from graphviz import Digraph, nohtml
 
 
 class TreeVisualizer:
@@ -22,6 +22,6 @@ class TreeVisualizer:
     def visualize(tree):
         name = f'tree_{tree.data if tree else None}_{id(tree)}'
         format = 'png'
-        g = graphviz.Digraph(name, format=format, node_attr={'shape': 'ellipse'})
+        g = Digraph(name, format=format, node_attr={'shape': 'ellipse'})
         TreeVisualizer.insert_node(g, tree)
         g.render(view=True, quiet_view=True, cleanup=True, outfile=f'./pics/{name}.{format}')

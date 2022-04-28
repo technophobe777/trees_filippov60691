@@ -6,6 +6,7 @@ class BST:
     def __init__(self):
         self.root = None
 
+
     def __eq__(self, other):
         if not isinstance(other, BST):
             return False

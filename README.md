@@ -23,6 +23,15 @@ Trees exercises for TP course
     * node search
     * node deletion
 
+3. AVL Tree `e03_avl_tree.py`
+
+    Implement:
+    * AVLTreeNode class
+    * AVLTree class with:
+    * single node insertion
+    * required methods for insertion
+
+    Ensure correct inheritance of `insert_list` method from BST.
 
 ## How-to
 1. Clone repo
@@ -37,3 +46,6 @@ Trees exercises for TP course
     pip install --upgrade pip
     pip install -r requirements.txt
     ```
+
+> Graphviz package required on your system for tree visualization!
+> https://www.graphviz.org/download/
